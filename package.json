@@ -1,0 +1,10 @@
+{
+	"name": "citizen-components",
+	"version": "0.1.0",
+	"devDependencies": {
+		"elix": "^12.0.0"
+	},
+	"scripts": {
+		"start": "npx serve"
+	}
+}

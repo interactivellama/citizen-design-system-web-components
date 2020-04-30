@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" href="public/css/main.css" />
+	</head>
+
+	<body>
+		<main>
+			<header class="header">
+				<div class="container">
+					<color-mode-toggle></color-mode-toggle>
+				</div>
+			</header>
+			<main>
+				<section class="system">
+					<div class="container">
+						<h3>Citizen Design System </h3>
+						<div class="citizen">
+							<div class="component-fragments">
+								<ul>
+									<li>
+										<h4>Buttons</h4>
+										<citizen-button variant="neutral">Neutral</citizen-button>
+										<citizen-button variant="brand">Brand</citizen-button>
+										<citizen-button variant="brand-outline">Brand Outline</citizen-button>
+										<citizen-button>Text</citizen-button>
+									</li>
+									<li class="span-full">
+										<h4>Icons</h4>
+										<sds-icon boundarysize="small"></sds-icon>
+										<!-- <sds-icon set="standard" symbol="opportunity"></sds-icon>
+										<sds-icon set="standard" symbol="case" size="large"></sds-icon> -->
+									</li>
+									<li>
+										<h4>Button Icon</h4>
+										<sds-button-icon symbol="add" variant="neutral" size="medium"></sds-button-icon>
+									</li>
+									<li>
+										<h4>Button Menu</h4>
+										<sds-button-menu variant="neutral">
+											<sds-menu-item>One</sds-menu-item>
+											<sds-menu-item>Two</sds-menu-item>
+											<sds-menu-item>Three</sds-menu-item>
+											<sds-menu-item>Four</sds-menu-item>
+										</sds-button-menu>
+									</li>
+									<li>
+										<h4>Dropdown</h4>
+										<sds-picklist variant="neutral" aria-label="Skill level">
+											<sds-menu-item>Beginner</sds-menu-item>
+											<sds-menu-item>Intermediate</sds-menu-item>
+											<sds-menu-item>Expert</sds-menu-item>
+										</sds-picklist>
+									</li>
+									<li class="span-full">
+										<h4>Card</h4>
+										<sds-card title="Card Title">
+											Content Card
+											<span slot="footer">Card Footer</span>
+										</sds-card>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="bwc">
+					<div class="container">
+						<h3>Elix Web Component (Base)</h3>
+						<div class="component-fragments">
+							<ul>
+								<li>
+									<h4>Buttons</h4>
+									<elix-button>Button</elix-button>
+									<elix-border-button>Button</elix-border-button>
+								</li>
+								<li>
+									<h4>Button Menu</h4>
+									<elix-menu-button>
+										<div>One</div>
+										<div>Two</div>
+										<div>Three</div>
+										<div>Four</div>
+									</elix-menu-button>
+								</li>
+								<li>
+									<h4>Dropdown List</h4>
+									<elix-dropdown-list aria-label="Skill level">
+										<div>Beginner</div>
+										<div>Intermediate</div>
+										<div>Expert</div>
+									</elix-dropdown-list>
+								</li>
+								<li>
+									<h4>Layout (Vertical Stack)</h4>
+									<base-vstack>
+										<div slot="above-content">VStack above content</div>
+										VStack content
+										<div slot="below-content">VStack below content</div>
+									</base-vstack>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</main>
+		</main>
+		<!-- Base Web Component -->
+		<script type="module" src="./src/main.js"></script>
+	</body>
+</html>

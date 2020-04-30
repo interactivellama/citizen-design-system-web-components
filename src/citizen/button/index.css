@@ -1,0 +1,372 @@
+/*! Citizen Design System 0.1.0-dev */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+.citizen-button {
+  --citizen-button-font-size: 14px;
+  --citizen-button-padding: 5px 15px;
+  --citizen-button-radius: 0px;
+}
+
+.citizen-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-clip: border-box;
+	background: transparent;
+	border: 0;
+	color: inherit;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	font-size: var(--citizen-button-font-size, inherit);
+	font-weight: var(--citizen-button-font-weight, normal);
+	line-height: inherit;
+	position: relative;
+	padding: var(--citizen-button-padding, 0);
+	text-align: inherit;
+	text-decoration: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: normal;
+	background-color: var(--citizen-button-color-background, transparent);
+	border-radius: var(--citizen-button-radius, 0.25rem);
+	color: var(--citizen-button-color-text, var(--citizen-brand-accessible, #3a3b3c));
+	font-size: var(--citizen-button-font-size, inherit);
+	line-height: var(--citizen-button-line-height, 1.875rem);
+	vertical-align: middle;
+	-webkit-box-shadow: var(--citizen-button-shadow, none);
+	box-shadow: var(--citizen-button-shadow, none);
+	margin-top: var(--citizen-button-spacing-vertical-start, 0);
+	margin-right: var(--citizen-button-spacing-horizontal-end, 0);
+	margin-bottom: var(--citizen-button-spacing-vertical-end, 0);
+	margin-left: var(--citizen-button-spacing-horizontal-start, 0);
+}
+
+.citizen-button:hover,
+.citizen-button:focus,
+.citizen-button:active,
+.citizen-button:visited {
+	text-decoration: none;
+}
+
+.citizen-button:hover,
+.citizen-button:focus {
+	border-color: var(--citizen-button-color-border-active, transparent);
+	color: var(
+		--citizen-button-color-text-active,
+		var(--citizen-brand-accessible-active, #005fb2)
+	);
+	background-color: var(--citizen-button-color-background-active, transparent);
+}
+
+.citizen-button:focus {
+	outline: 0;
+	-webkit-box-shadow: var(
+		--citizen-button-shadow-active,
+		0 0 2px var(--citizen-brand-accessible, #00a2df)
+	);
+	box-shadow: var(
+		--citizen-button-shadow-active,
+		0 0 2px var(--citizen-brand-accessible, #00a2df)
+	);
+	z-index: var(--citizen-button-depth-active, 0);
+	-webkit-text-decoration: var(--citizen-button-text-decoration-active, none);
+	text-decoration: var(--citizen-button-text-decoration-active, none);
+}
+
+.citizen-button[disabled],
+.citizen-button:disabled {
+	background-color: var(--citizen-button-color-background-disabled, transparent);
+	border-color: var(--citizen-button-color-border-disabled, transparent);
+	color: var(--citizen-button-color-text-disabled, #dddbda);
+	cursor: default;
+}
+
+.citizen-button[disabled] *,
+.citizen-button:disabled * {
+	pointer-events: none;
+}
+.citizen-button_brand {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	-webkit-transition: border 0.15s linear;
+	transition: border 0.15s linear;
+	--citizen-button-color-background: var(
+		--citizen-button-brand-color-background,
+		var(--citizen-brand-accessible, #00a2df)
+	);
+	--citizen-button-color-border: var(
+		--citizen-button-brand-color-border,
+		var(--citizen-brand-accessible, #00a2df)
+	);
+	--citizen-button-color-text: var(--citizen-button-brand-color-text, white);
+	--citizen-button-shadow: var(--citizen-button-brand-shadow, none);
+	--citizen-button-color-text-active: var(
+		--citizen-button-brand-color-text-active,
+		white
+	);
+	--citizen-button-color-background-active: var(
+		--citizen-button-brand-color-background-active,
+		var(--citizen-brand-accessible-active, #005fb2)
+	);
+	--citizen-button-color-background-disabled: #c9c7c5;
+	--citizen-button-color-border-disabled: #c9c7c5;
+	--citizen-button-color-text-disabled: white;
+	--citizen-button-shadow: var(--citizen-button-brand-shadow);
+}
+.citizen-button_brand-outline {
+  color: var(
+		--citizen-button-brand-color-border,
+		var(--citizen-brand-accessible, #00a2df)
+	);
+	border-color: var(
+		--citizen-button-brand-color-border,
+		var(--citizen-brand-accessible, #00a2df)
+	);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-width: 1px;
+  border-style: solid;
+	-webkit-transition: border 0.15s linear;
+  transition: border 0.15s linear;
+  --citizen-button-color-background: var(
+		--citizen-button-neutral-color-background,
+		white
+	);
+--citizen-button-color-background-active: var(
+		--citizen-button-neutral-color-background-active,
+		#fafaf9
+	);
+	--citizen-button-color-border-active: var(
+		--citizen-button-brand-color-border-active,
+		var(--citizen-brand-accessible, #00a2df)
+	);
+	--citizen-button-color-background-disabled: white;
+	--citizen-button-color-border-disabled: #dddbda;
+}
+.citizen-button_destructive {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	-webkit-transition: border 0.15s linear;
+	transition: border 0.15s linear;
+	--citizen-button-color-background: #c23934;
+	--citizen-button-color-border: #c23934;
+	--citizen-button-color-text: white;
+	--citizen-button-color-background-active: #a61a14;
+	--citizen-button-color-text-active: white;
+	--citizen-button-color-background-disabled: #c9c7c5;
+	--citizen-button-color-border-disabled: #c9c7c5;
+	--citizen-button-color-text-disabled: white;
+}
+.citizen-button_destructive-text {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	-webkit-transition: border 0.15s linear;
+	transition: border 0.15s linear;
+	--citizen-button-color-background: var(
+		--citizen-button-neutral-color-background,
+		white
+	);
+	--citizen-button-color-border: var(
+		--citizen-button-neutral-color-border,
+		#dddbda
+	);
+	--citizen-button-color-text: var(
+		--citizen-button-destructive-color-text,
+		#c23934
+	);
+	--citizen-button-color-background-active: var(
+		--citizen-button-neutral-color-background-active,
+		#fafaf9
+	);
+	--citizen-button-color-border-active: var(
+		--citizen-button-neutral-color-border-active,
+		#dddbda
+	);
+	--citizen-button-color-text-active: var(
+		--citizen-button-destructive-color-text-active,
+		#a12b2b
+	);
+	--citizen-button-color-background-disabled: white;
+	--citizen-button-color-border-disabled: #dddbda;
+}
+.citizen-button_inverse {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	-webkit-transition: border 0.15s linear;
+	transition: border 0.15s linear;
+	--citizen-button-color-background: var(
+		--citizen-button-inverse-color-background,
+		transparent
+	);
+	--citizen-button-color-border: var(--citizen-button-inverse-color-border, white);
+	--citizen-button-color-text: var(--citizen-button-inverse-color-text, white);
+	--citizen-button-color-border-active: var(
+		--citizen-button-inverse-color-border-active,
+		white
+	);
+	--citizen-button-color-text-active: var(
+		--citizen-button-inverse-color-text-active,
+		#f3f2f2
+	);
+	--citizen-button-color-background-disabled: transparent;
+	--citizen-button-color-border-disabled: rgba(255, 255, 255, 0.15);
+	--citizen-button-color-text-disabled: rgba(255, 255, 255, 0.15);
+}
+
+.citizen-button_inverse:focus {
+	border: 1px solid var(--citizen-inverse-button-color-border-active, #ecebea);
+	-webkit-box-shadow: var(
+		--citizen-inverse-button-shadow-active,
+		0 0 3px #ecebea
+	);
+	box-shadow: var(--citizen-inverse-button-shadow-active, 0 0 3px #ecebea);
+	outline: none;
+}
+.citizen-button_success {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	-webkit-transition: border 0.15s linear;
+	transition: border 0.15s linear;
+	--citizen-button-color-background: #4bca81;
+	--citizen-button-color-border: #4bca81;
+	--citizen-button-color-text: #080707;
+	--citizen-button-color-border-active: #04844b;
+	--citizen-button-color-background-active: #04844b;
+	--citizen-button-color-text-active: white;
+	--citizen-button-color-background-disabled: #c9c7c5;
+	--citizen-button-color-border-disabled: #c9c7c5;
+	--citizen-button-color-text-disabled: white;
+}
+.citizen-button_neutral {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	-webkit-transition: border 0.15s linear;
+	transition: border 0.15s linear;
+	--citizen-button-color-background: var(
+		--citizen-button-neutral-color-background,
+		white
+	);
+	--citizen-button-color-border: var(
+		--citizen-button-neutral-color-border,
+		#dddbda
+	);
+	--citizen-button-color-text: var(
+		--citizen-button-neutral-color-text,
+		var(--citizen-brand-accessible, inherit)
+	);
+	--citizen-button-color-text-active: var(
+		--citizen-button-neutral-color-text-active,
+		var(--citizen-brand-accessible-active, inherit)
+	)
+	--citizen-button-color-background-active: var(
+		--citizen-button-neutral-color-background-active,
+		#fafaf9
+	);
+	--citizen-button-color-border-active: var(
+		--citizen-button-neutral-color-border-active,
+		#dddbda
+	);
+	--citizen-button-color-background-disabled: white;
+	--citizen-button-color-border-disabled: #dddbda;
+	--citizen-button-shadow: var(--citizen-button-neutral-shadow);
+	--citizen-icon-color: var(--citizen-brand-accessible, #00a2df);
+	--citizen-icon-size: 0.75rem;
+}
+.citizen-button_full-width {
+	width: 100%;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.citizen-button__icon-left,
+::slotted(.citizen-button__icon-left) {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-item-align: center;
+	align-self: center;
+	margin-right: 0.5rem;
+	--citizen-icon-color: currentColor;
+}
+.citizen-button__icon-right,
+::slotted(.citizen-button__icon-right) {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-item-align: center;
+	align-self: center;
+	margin-left: 0.5rem;
+	--citizen-icon-color: currentColor;
+}
+
+.citizen-button_start {
+	--citizen-button-radius: 0.25rem 0 0 0.25rem;
+}
+
+.citizen-button_end {
+	--citizen-button-radius: 0 0.25rem 0.25rem 0;
+	--citizen-button-shadow-brand: none;
+}
+.citizen-button_stateful {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	-webkit-transition: border 0.15s linear;
+	transition: border 0.15s linear;
+	--citizen-button-color-background: var(
+		--citizen-button-neutral-color-background,
+		white
+	);
+	--citizen-button-color-border: var(
+		--citizen-button-neutral-color-border,
+		#dddbda
+	);
+	--citizen-button-color-text: var(
+		--citizen-button-neutral-color-text,
+		var(--citizen-brand-accessible, #00a2df)
+	);
+	--citizen-button-color-background-active: var(
+		--citizen-button-neutral-color-background-active,
+		#fafaf9
+	);
+	--citizen-button-color-border-active: var(
+		--citizen-button-neutral-color-border-active,
+		#dddbda
+	);
+	--citizen-button-color-background-disabled: white;
+	--citizen-button-color-border-disabled: #dddbda;
+	--citizen-icon-color: var(--citizen-brand-accessible, #00a2df);
+}
+
+.citizen-button_stateful-text-not-selected,
+.citizen-button_stateful-text-selected,
+.citizen-button_stateful-text-selected-focused {
+	display: var(--citizen-button-stateful-display, none);
+}
+.citizen-button_stateful-text-not-selected {
+	--citizen-button-stateful-display: inline-flex;
+}
+.citizen-button_stateful-text-selected,
+.citizen-button_stateful-text-selected-focused {
+	--citizen-button-stateful-display: none;
+}
+[aria-pressed="true"] .citizen-button_stateful-text-not-selected {
+	--citizen-button-stateful-display: none;
+}
+[aria-pressed="true"] .citizen-button_stateful-text-selected {
+	--citizen-button-stateful-display: inline-flex;
+}
+
+[aria-pressed="true"]:not(:focus) {
+	--citizen-button-color-border: transparent;
+}
+[aria-pressed="true"]:hover .citizen-button_stateful-text-selected,
+[aria-pressed="true"]:focus .citizen-button_stateful-text-selected {
+	--citizen-button-stateful-display: none;
+}
+[aria-pressed="true"]:hover .citizen-button_stateful-text-selected-focused,
+[aria-pressed="true"]:focus .citizen-button_stateful-text-selected-focused {
+	--citizen-button-stateful-display: inline-flex;
+}
