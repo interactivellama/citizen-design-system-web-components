@@ -5,6 +5,7 @@
 		"elix": "^12.0.0"
 	},
 	"scripts": {
-		"start": "npx serve"
+		"deploy": "npm install && rm -rf dist && mkdir dist && rsync -rv * dist --exclude ./dist",
+    "start": "npx serve"
 	}
 }
